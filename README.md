@@ -1,11 +1,5 @@
 # go-mfs
 
-[![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](http://ipn.io)
-[![](https://img.shields.io/badge/project-IPFS-blue.svg?style=flat-square)](http://ipfs.io/)
-[![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
-[![GoDoc](https://godoc.org/github.com/ipfs/go-mfs?status.svg)](https://godoc.org/github.com/ipfs/go-mfs)
-[![Build Status](https://travis-ci.com/ipfs/go-mfs.svg?branch=master)](https://travis-ci.com/ipfs/go-mfs)
-
 > go-mfs implements an in-memory model of a mutable IPFS filesystem.
 
 ## Lead Maintainer
@@ -54,7 +48,7 @@ This repository contains many files, all belonging to the root `mfs` package.
 * `ops.go`: Functions that do not belong to either `File` nor `Directory` (although they mostly operate on them) that contain common operations to the MFS, e.g., find, move, add a file, make a directory.
 * `root.go`: MFS `Root` (a `Directory` with republishing support).
 * `repub.go`: `Republisher`.
-* `mfs_test.go`: General tests (needs a [revision](https://github.com/TRON-US/go-mfs/issues/9)).
+* `mfs_test.go`: General tests (needs a [revision](https://github.com/ipfs/go-mfs/issues/9)).
 * `repub_test.go`: Republisher-specific tests (contains only the `TestRepublisher` function).
 
 ## Contribute
@@ -65,4 +59,4 @@ Small note: If editing the README, please conform to the [standard-readme](https
 
 ## License
 
-MIT © Protocol Labs, Inc.
+MIT © TRON-US
