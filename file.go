@@ -9,7 +9,7 @@ import (
 	mod "github.com/TRON-US/go-unixfs/mod"
 	dag "github.com/ipfs/go-merkledag"
 
-	chunker "github.com/ipfs/go-ipfs-chunker"
+	chunker "github.com/TRON-US/go-btfs-chunker"
 	ipld "github.com/ipfs/go-ipld-format"
 )
 
