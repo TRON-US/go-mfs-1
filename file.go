@@ -98,7 +98,8 @@ func (fi *File) Open(flags Flags) (_ FileDescriptor, _retErr error) {
 		// Ok as well.
 	}
 
-	dmod, err := mod.NewDagModifier(context.TODO(), node, fi.dagService, chunker.SizeSplitterGen(chunker.DefaultBlockSize))
+	//dmod, err := mod.NewDagModifier(context.TODO(), node, fi.dagService, chunker.SizeSplitterGen(chunker.DefaultBlockSize))
+	dmod, err := mod.NewDagModifier(context.TODO(), node, fi.dagService, chunker.DefaultSplitter)
 	// TODO: Remove the use of the `chunker` package here, add a new `NewDagModifier` in
 	// `go-unixfs` with the `DefaultSplitter` already included.
 	if err != nil {
