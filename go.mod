@@ -1,8 +1,8 @@
 module github.com/TRON-US/go-mfs
 
 require (
-	github.com/TRON-US/go-btfs-chunker v0.2.4
-	github.com/TRON-US/go-unixfs v0.4.12
+	github.com/TRON-US/go-btfs-chunker v0.3.0
+	github.com/TRON-US/go-unixfs v0.6.0
 	github.com/ipfs/go-blockservice v0.1.1
 	github.com/ipfs/go-cid v0.0.2
 	github.com/ipfs/go-datastore v0.0.5
