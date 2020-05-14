@@ -1,6 +1,6 @@
 # go-mfs
 
-> go-mfs implements an in-memory model of a mutable IPFS filesystem.
+> go-mfs implements an in-memory model of a mutable BTFS filesystem.
 
 ## Lead Maintainer
 
@@ -21,23 +21,13 @@
 > go get github.com/TRON-US/go-mfs
 ```
 
-It uses [Gx](https://github.com/whyrusleeping/gx) to manage dependencies. You can use `make all` to build it with the `gx` dependencies.
-
 ## Usage
 
 ```
 import "github.com/TRON-US/go-mfs"
 ```
 
-Check the [GoDoc documentation](https://godoc.org/github.com/TRON-US/go-mfs)
-
-## Documentation
-
-Documentation around the MFS and the Files API in general around IPFS is a work in progress the following links may be of use:
-
-* [UnixFS](https://docs.ipfs.io/guides/concepts/unixfs/)
-* [MFS](https://docs.ipfs.io/guides/concepts/mfs/)
-* [General concept document about how are files handled in IPFS (WIP)](https://github.com/ipfs/docs/issues/133)
+Check the [GoDoc documentation](https://pkg.go.dev/github.com/TRON-US/go-mfs)
 
 ## Repository Structure
 This repository contains many files, all belonging to the root `mfs` package.
@@ -48,7 +38,7 @@ This repository contains many files, all belonging to the root `mfs` package.
 * `ops.go`: Functions that do not belong to either `File` nor `Directory` (although they mostly operate on them) that contain common operations to the MFS, e.g., find, move, add a file, make a directory.
 * `root.go`: MFS `Root` (a `Directory` with republishing support).
 * `repub.go`: `Republisher`.
-* `mfs_test.go`: General tests (needs a [revision](https://github.com/ipfs/go-mfs/issues/9)).
+* `mfs_test.go`: General tests.
 * `repub_test.go`: Republisher-specific tests (contains only the `TestRepublisher` function).
 
 ## Contribute
